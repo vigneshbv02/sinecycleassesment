@@ -6,6 +6,8 @@ function App() {
   const sample2 = [['Sample1.1','Sample1.2','Sample1.3'],['Sample2.1','Sample2.2','Sample2.3'],['Sample3.1','Sample3.2','Sample3.3'],['Sample4.1','Sample4.2','Sample4.3']];
   const sampleColor2 = ['green','blue','red','grey'];
 
+  const sample3 = [['Sample1.1','Sample1.2','Sample1.3'],['Sample2.1','Sample2.2','Sample2.3'],['Sample3.1','Sample3.2','Sample3.3'],['Sample4.1','Sample4.2','Sample4.3']];
+
   return (
     <div className="App">
       <Timeline data={sample1}/>
