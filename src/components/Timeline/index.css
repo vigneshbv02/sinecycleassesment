@@ -1,0 +1,27 @@
+.timeLinebody {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timelineContainer {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding: 42px 24px 50px;
+    color: rgba(0,0,0,.85);
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}

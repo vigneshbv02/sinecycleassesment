@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Timeline from './components/Timeline';
 
 function App() {
+
+  const sample1 = ['Sample 1','Sample 2','Sample 3','Sample 4','Sample 5','Sample 6','Sample 7'];
+  const sample2 = [['Sample1.1','Sample1.2','Sample1.3'],['Sample2.1','Sample2.2','Sample2.3'],['Sample3.1','Sample3.2','Sample3.3'],['Sample4.1','Sample4.2','Sample4.3']];
+  const sampleColor2 = ['green','blue','red','grey'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Timeline data={sample1}/>
+      <Timeline data={sample2} color={sampleColor2}/>
     </div>
   );
 }

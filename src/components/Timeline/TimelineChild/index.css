@@ -1,0 +1,54 @@
+.timelineChildContainer {
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.timelinetail {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    height: calc(100% - 10px);
+    border-left: 2px solid #f0f0f0;
+}
+
+.timelinePointers {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+
+.timelinePointers-blue {
+    color: #1890ff;
+    border-color: #1890ff;
+}
+
+.timelinePointers-red {
+    color: #ff1818;
+    border-color: #ff1818;
+}
+
+.timelinePointers-green {
+    color: #1bb35f;
+    border-color: #1bb35f;
+}
+
+
+.timelinePointers-grey {
+    color: #d8d8d8;
+    border-color: #d8d8d8;
+}
+
+.timelineData {
+    position: relative;
+    top: -7.001px;
+    margin: 0 0 0 26px;
+    word-break: break-word;
+}
