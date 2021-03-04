@@ -1,19 +1,26 @@
 .timelineChildContainer {
     position: relative;
     margin: 0;
-    padding-bottom: 20px;
     font-size: 14px;
     list-style: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: flex;
 }
 
 .timelinetail {
-    position: absolute;
-    top: 10px;
-    left: 6px;
-    height: calc(100% - 10px);
+    position: relative;
+    margin-top: 14px;
+    margin-left: 6px;
+    height: calc(100% - 15px);
     border-left: 2px solid #f0f0f0;
+}
+
+.timelinetailCustom {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
 }
 
 .timelinePointers {
@@ -49,6 +56,47 @@
 .timelineData {
     position: relative;
     top: -7.001px;
-    margin: 0 0 0 26px;
+    margin: 0 26px 20px 26px;
     word-break: break-word;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+.timelineLabel {
+  position: relative;
+  top: -7.00px;
 }
